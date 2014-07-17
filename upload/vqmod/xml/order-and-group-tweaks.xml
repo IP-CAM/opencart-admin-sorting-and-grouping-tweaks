@@ -1,0 +1,18 @@
+<modification>
+	<id><![CDATA[@tik Admin Sorting and Grouping tweaks]]></id>
+	<version><![CDATA[1.1]]></version>
+	<vqmver><![CDATA[2.1.7]]></vqmver>
+	<author><![CDATA[OC2PS]]></author>
+	<file name="admin/controller/catalog/review.php">
+		<operation>
+			<search position="replace" error="log"><![CDATA['ASC';]]></search>
+			<add><![CDATA['DESC';]]></add>
+		</operation>
+	</file>
+	<file name="admin/controller/report/sale_order.php">
+		<operation>
+			<search position="replace" error="log"><![CDATA[$filter_group = 'week';]]></search>
+			<add><![CDATA[$filter_group = 'month';]]></add>
+		</operation>
+	</file>
+</modification>
